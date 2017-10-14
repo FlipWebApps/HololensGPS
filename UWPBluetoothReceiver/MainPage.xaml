@@ -7,7 +7,14 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Button Content="Start / Restart Bluetooth Watcher" HorizontalAlignment="Left" Margin = "152,293,0,0" VerticalAlignment="Top" Click="Button_Click"/>
-    </Grid>
+    <StackPanel Margin="8" Width="300">
+        <TextBlock Text="Time" Style="{StaticResource BaseTextBlockStyle}" TextWrapping="WrapWholeWords" TextAlignment="Center" />
+        <TextBlock Text="{x:Bind Time, Mode=OneWay}" Style="{StaticResource CaptionTextBlockStyle}" Margin="0,8,0,0" TextWrapping="WrapWholeWords" TextAlignment="Center"/>
+        <TextBlock Text="Latitude" Style="{StaticResource BaseTextBlockStyle}" Margin="0,8,0,0" TextWrapping="WrapWholeWords" TextAlignment="Center" />
+        <TextBlock Text="{x:Bind Latitude, Mode=OneWay}" Style="{StaticResource CaptionTextBlockStyle}" Margin="0,8,0,0" TextWrapping="WrapWholeWords" TextAlignment="Center" />
+        <TextBlock Text="Longitude" Style="{StaticResource BaseTextBlockStyle}" Margin="0,8,0,0" TextWrapping="WrapWholeWords" TextAlignment="Center" />
+        <TextBlock Text="{x:Bind Longitude}" Style="{StaticResource CaptionTextBlockStyle}" Margin="0,8,0,0" TextWrapping="WrapWholeWords" TextAlignment="Center" />
+        <Button Content="Start / Restart Bluetooth Watcher" HorizontalAlignment="Center" Margin = "0,0,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+    </StackPanel>
+
 </Page>

@@ -24,9 +24,15 @@ namespace BluetoothTest
     {
         BluetoothLEAdvertisementWatcher watcher;
         public static ushort BEACON_ID = 1775;
+
+        public string Time { get; set; }
+        public string Latitude { get; set; }
+        public string Longitude { get; set; }
+
         public MainPage()
         {
             this.InitializeComponent();
+            DataContext = this;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -55,6 +61,11 @@ namespace BluetoothTest
                 var gpsData = GPS_DataPacket.ParseDataPacket(data);
 
                 Debug.WriteLine(gpsData.ToString());
+                Time = DateTime.Now.ToString();
+                Latitude = gpsData.Latitude.ToString();
+                Longitude = gpsData.Longitude.ToString();
+                Bindings.Update();
+
                 /* GPS Data Parsing / UI integration goes here */
             }
             );
