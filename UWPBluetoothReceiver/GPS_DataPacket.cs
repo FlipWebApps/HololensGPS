@@ -19,20 +19,20 @@ public class GPS_DataPacket
         string lat, lng;
         if (Latitude > 0)
         {
-            lat = string.Format("{0:0.00} AfAfAfAfAfAfAfAfAfAfAfAfAfAfAfAfAfA'A?N", Latitude);
+            lat = string.Format("{0:0.00} N", Latitude);
         }
         else
         {
-            lat = string.Format("{0:0.00} AfAfAfAfAfAfAfAfAfAfAfAfAfAfAfAfAfA'A?S", -Latitude);
+            lat = string.Format("{0:0.00} S", -Latitude);
         }
         if (Longitude > 0)
         {
-            lng = string.Format("{0:0.00} AfAfAfAfAfAfAfAfAfAfAfAfAfAfAfAfAfA'A?E", Longitude);
+            lng = string.Format("{0:0.00} E", Longitude);
         }
         else
         {
-            lng = string.Format("{0:0.00} AfAfAfAfAfAfAfAfAfAfAfAfAfAfAfAfAfA'A?W", -Longitude);
+            lng = string.Format("{0:0.00} W", -Longitude);
         }
-        return string.Format("Latitude: {0}, Longitude: {1}, Heading: {2:0.00}AfAfAfAfAfAfAfAfAfAfAfAfAfAfAfAfAfA'A?, Speed: {3:0.00} knots", lat, lng, Heading, Speed);
+        return string.Format("Latitude: {0}, Longitude: {1}, Heading: {2:0.00}, Speed: {3:0.00} knots", lat, lng, Heading, Speed);
     }
 }
