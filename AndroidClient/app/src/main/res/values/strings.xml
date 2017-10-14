@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">HololensBluetoothGPS</string>
+    <string name="ble_not_supported">Your device must support Bluetooth LE.</string>
+    <string name="bt_not_enabled_leaving">You didn\'t enable Bluetooth. Quitting!</string>
+    <string name="bt_ads_not_supported">Bluetooth advertising not supported.</string>
+    <string name="bt_ads_not_supported_leaving">Bluetooth advertising not supported. Quitting!</string>
 </resources>
