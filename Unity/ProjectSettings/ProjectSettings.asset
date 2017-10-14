@@ -503,9 +503,11 @@ PlayerSettings:
   webGLUseEmbeddedResources: 0
   webGLUseWasm: 0
   webGLCompressionFormat: 1
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    14: 
   platformArchitecture: {}
-  scriptingBackend: {}
+  scriptingBackend:
+    Metro: 2
   incrementalIl2cppBuild: {}
   additionalIl2CppArgs: 
   scriptingRuntimeVersion: 0
@@ -514,11 +516,11 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   metroPackageName: HololensGPS
   metroPackageVersion: 1.0.0.0
-  metroCertificatePath: D:\Unity\Experimental\HololensGPS\Unity\Assets\WSATestCertificate.pfx
+  metroCertificatePath: Assets/WSATestCertificate.pfx
   metroCertificatePassword: 
   metroCertificateSubject: DefaultCompany
   metroCertificateIssuer: DefaultCompany
-  metroCertificateNotAfter: 0075e2e4735bd401
+  metroCertificateNotAfter: 80fa1d01e45bd401
   metroApplicationDescription: HololensGPS
   wsaImages: {}
   metroTileShortName: 
@@ -543,10 +545,10 @@ PlayerSettings:
       EnterpriseAuthentication: False
       HumanInterfaceDevice: False
       InputInjectionBrokered: False
-      InternetClient: True
+      InternetClient: False
       InternetClientServer: False
       Location: False
-      Microphone: False
+      Microphone: True
       MusicLibrary: False
       Objects3D: False
       PhoneCall: False
